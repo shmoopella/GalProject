@@ -14,16 +14,54 @@ body {
     height: 350px;
     background-color: whitesmoke;
     border: 1px solid grey;
+    border-radius: 10px;
     box-shadow: 2px 2px 4px darkgrey;
+    color: #666;
 }
+
 button {
-    font-size: 23px;
-    padding: 10px;
+    font-size: 20px;
+    color: #666;
+    padding: 20px 15px;
+    background-color: rgba(232,157,164, 0.8);
     border-radius: 15px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgba(232,157,164, 0.5);
+    cursor: pointer;
 }
 
 #fileInput {
     width: 70%;
-    font-size: 25px;
+    font-size: 20px;
+    color: rgb(104,64,39);
+}
 
+#real-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+#file-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+#file-name {
+    margin-left: 10px;
+    font-size: 19px;
+}
+
+#custom-button {
+    border-radius: 5px;
+    background-color: rgba(175,218,252, 0.3);
+    border: 2px solid rgba(175,218,252, 0.5);
+}
+
+#custom-button:hover {
+    background-color: rgba(175,218,252, 0.5);
 }
